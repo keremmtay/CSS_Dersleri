@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container
+        {
+            background-color: aqua;
+        }
+        .kutu
+        {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 5px;
+            /* display: inline-block; */
+            float: left;
+
+        }
+        #kutu1
+        {
+            float: right;
+        }
+        .clearfix::after
+        {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #kutu3
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Nesneleri sayfa üzerinde konumlandırmaya yarayan özellktir. Önce div'ler ile kullanımı öğrenelim.  -->
+
+    <!-- Block elemanlar alt alta yer kaplarken inline elemanlar da içerikleri kadar yan yana yer kaplarlar. inline-block elemanlar ise aynı satırda yanyana getirebiliyoruz. 
+    
+    Inline elemanları text-align özelliği ile sağa ya da sola kaydırabiliyoruz. Ama block elemanlarda bu işlemi yapabilmek için float özelliğini kullanmamız gerekir. -->
+
+
+
+    <div id="container" class="clearfix">
+        <div class="kutu" id="kutu1">Kutu 1</div>
+        <div class="kutu">Kutu 2</div>
+        <div class="kutu" id="kutu3">Kutu 3</div>
+    </div>
+
+
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid a pariatur assumenda laborum quo. Veritatis similique quo magni rem dolore excepturi reiciendis nihil impedit voluptatibus? Expedita reiciendis mollitia quasi dolor!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            background-color: #181d31;
+            padding: 15px;
+            display: flex;
+
+            /* yatayda item'lar ile çalışmak istiyorsam justify-content özelliğini kullanmam gerekecek */
+
+            /* justify-content: center;  /* itemleri sayfada ortalıyor */
+            /* justify-content: flex-start;/* en soldan başlayarak konumlandırıyor itemları. default olan özellikte bu flex-start özelliğidir. */
+            /* justify-content: flex-end; /* itemları sağ tarafa yanaştırıyor. */
+            /* justify-content: space-around; /* her item arasında boşluk bırakıyor. her item için sağdan ve soldan 1 birim boşluk bırakıyor. */
+            /* justify-content: space-between; /* birer item'ı sağa ve sola yerleştiriyor. kalanları da arada aynı mesafede boşluk bırakarak yerleştiriyor. */
+            /* justify-content: space-evenly; /* başta ve sonda ve ortadaki itemler arasında X birim kadar boşluk bırakarak tüm satıra yerleştirme işlemi yapıyor. */
+
+            /* itemları dikeyde konumlanmasını da sağlayabiliriz. bunu align-items özelliği ile yapıyoruz. */
+            height: 500px;
+
+            /* align-items: stretch; /* kapsayıcı yani container'ın boyutu kadar yer kaplıyor */
+            /* align-items: flex-start; /* itemların boyutu kadar yer kaplıyor ve containerın üst kısımda konumlanıyor. */
+            /* align-items: flex-end; /* itemlerı containerın alt kısmında konumlandırıyor. */
+            /* align-items: center; /* itemların containerın orta kısmında konumlanmasını sağlıyor */
+            /*justify-content: center; /* yatayda da ortalamak istiyorsak hem align-items:center hem de justify-content:center ı kullanmam gerekiyor */
+
+            flex-direction: column;
+            align-items: flex-start;
+
+        }
+
+        .item
+        {
+            background-color: #678983;
+            padding: 30px;
+            margin: 20px;
+            color: aliceblue;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <!-- flex, 2017 yılından sonra gelen bir özelliktir. Flex de nesneleri ekranda konumlandırmak için kullanılan bir özelliktir. float, display ile yapılan işlemleri çok daha kolay bir şekilde yapabilen bir özelliktir. -->
+
+    <div class="container">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

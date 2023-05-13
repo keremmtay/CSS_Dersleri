@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            background-color: #181d31;
+            padding: 15px;            
+            height: 500px;
+            display: flex;
+            /* align-items: flex-end; */
+            flex-direction: column;
+        }
+
+        .item
+        {
+            background-color: #678983;
+            padding: 30px;
+            margin: 20px;
+            color: aliceblue;
+            font-size: 25px;
+        }
+        .item1
+        {
+            align-self: flex-start;
+        }
+        .item2
+        {
+            align-self: center;
+        }
+        .item3
+        {
+            align-self: center;
+        }
+        .item4
+        {
+            justify-content: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- flex, 2017 yılından sonra gelen bir özelliktir. Flex de nesneleri ekranda konumlandırmak için kullanılan bir özelliktir. float, display ile yapılan işlemleri çok daha kolay bir şekilde yapabilen bir özelliktir. -->
+
+    <div class="container">
+        <div class="item item1">item 1</div>
+        <div class="item item2">item 2</div>
+        <div class="item item3">item 3</div>
+        <div class="item item4">item 4</div>
+
+    </div>
+    
+</body>
+</html>

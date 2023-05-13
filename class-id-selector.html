@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a
+        {
+            background-color: coral;
+        }
+        div
+        {
+            background-color: #2b3a55;
+        }
+        .text-red
+        {
+            color: red;
+        }
+        #page-title
+        {
+            font-size: 20px;
+            border: 2px solid blue;
+        }
+        #html-ders
+        {
+            color: antiquewhite;
+            font-size: 18px;
+        }
+
+        /* CSS önceliklerine bakarsak sırasıyla en öncelikli olanlar aşağıda listelenmiştir. Inline > Internal > External
+
+        - Inline CSS
+        - Internal CSS
+        - External CSS
+
+        - ID > Class > Etiket(tag - selector)
+        - ID
+        - Class
+        - Etiket
+
+        Tarayıcının varsayılanı en son önceliğe sahiptir.
+
+        
+         */
+    </style>
+</head>
+<body>
+    
+    <!-- Açıklama
+    
+        Şimdiye kadar tag ismi vererek bir biçimlendirme yaptık. Örneğin h1 tag'i için biçimlendirme yaptığmızda sadece h1 tag'i kullandığı zaman bu biçimlendirme geçerli olacak. Bu da genel olarak istenilen bir şey değildir. Gerekli görüldüğünde kullanılır ama sadece bu şekilde biçimlendirme yapılmaz. Tag ile biçimlendirmenin yanında class ve id kullanarak da biçimlendirme yapabiliriz.
+
+        Örneğin bir class tanımlayıp biçimlendirmeyi oluşturduktan sonra istediğimiz tag'lere class="class_name" şeklinde ilgili class'ı verip, yapılan biçimlendirmeyi o etiketler için uygulatabiliriz.
+
+        Class tanımlarken nokta class adı şeklinde tanımlarız.
+        .blog-post{}
+
+        kullanırken de ilgili etikette örneğin div;
+        <div class="blog-post">
+        </div>
+        şeklinde kullanırız.
+
+        Yine benzer şekilde id tanımlayarak da biçimlendirme yapabiliriz. ID için bir kimlik numarası diyebiliriz. ID oluşturulduktan sonra HTML içerisinde bu id'yi sadece bir kere kullanabiliriz.
+        id oluşturmak için #id_adi şeklinde tanımlama yaparız.
+        kullanırken de örneğin div için;
+        <div id="id_adi">
+        </div>
+        şeklinde kullanırız.
+
+        #blog-title {}
+
+        id="blog-title"
+       
+    -->
+
+<div>
+    <ul>
+        <li><a href="">Anasayfa</a></li>
+        <li><a href="">Dersler</a></li>
+        <li><a href="">Hakkımızda</a></li>
+    </ul>
+</div>
+
+
+
+<div>
+    <h1 id="page-title">Web Dersleri</h1>
+    <p class="text-red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, nesciunt tempore. Ipsam cupiditate nostrum voluptatum obcaecati voluptas, distinctio cumque beatae eos, libero nulla quae fugiat perferendis exercitationem, voluptates ab repellendus!</p>
+</div>
+
+<div id="html-ders">
+    <h3>Html Dersleri</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ducimus necessitatibus, vero suscipit explicabo, quod ipsa, quis culpa temporibus aliquam consequuntur officia beatae expedita sed perferendis dicta minus animi voluptatibus.</p>
+</div>
+
+<div>
+    <h3 class="text-red">Css Dersleri</h3>
+    <p class="text-red">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde neque itaque exercitationem illum quaerat corrupti esse alias? Labore perspiciatis, deserunt repudiandae recusandae dolore impedit quibusdam, quaerat ut, ipsam praesentium facere.</p>
+</div>
+
+
+</body>
+</html>

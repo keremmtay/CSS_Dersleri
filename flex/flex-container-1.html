@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            background-color: #181d31;
+            padding: 15px;
+            display: flex;            /* Container'a flex özelliğini kazandırmış oluyorum.  */
+
+            /* flex-direction:  */
+             /* flex-direction: row;   displayflex özelliğinde flex-direction'ın default özelliği row'dur. satır içinde konumlanıyor. Inline gibi çalışmasını sağlıyor. */
+             /* flex-direction: row-reverse; */
+            /* flex-direction:column; yukarıdan aşağıya doğru bir sıralama yapıyor ve block eleman gibi çalışıyor. */
+            /* flex-direction: column-reverse; tersten sıralama yapıyor */
+            /* flex-direction: nowrap;    Ekran küçüldüğünde item olan elemanlar aynı satırda kalıyor ve sayfaya sığmadığında tarayıcının altında scrollbar çıkıyor. bu istenen bir şey değildir. */
+            /* flex-wrap:wrap;      Ekranı küçülttüğümüzde item olan elemanlar alt satıra geçiyor. */
+            flex-flow: row wrap; /* flex-direction ile flex-wrap'ın özelliklerini aynı anda kullanan bir özelliği... */
+
+
+        }
+        .item
+        {
+            background-color: #678983;
+            padding: 30px;
+            margin: 20px;
+            color: aliceblue;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <!-- flex, 2017 yılından sonra gelen bir özelliktir. Flex de nesneleri ekranda konumlandırmak için kullanılan bir özelliktir. float, display ile yapılan işlemleri çok daha kolay bir şekilde yapabilen bir özelliktir. -->
+
+    <div class="container">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

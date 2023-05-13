@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        header, footer
+        {
+            background-color: #8267be;
+            color: #ffbd35;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .menu
+        {
+            width: 25%;
+            /* background-color: blue; */
+            /* height: 100px; */
+            float: left;
+            padding: 0 15px;
+        }
+        .content
+        {
+            width: 75%;
+            /* background-color: red; */
+            /* height: 200px; */
+            float: right;
+            padding: 15px;
+            background-color: #e1cb9f;
+        }
+        .clearfix::after
+        {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .menu ul
+        {
+            /* Buradaki kodlar menu class'ının uygulandığı etiketin içindeki ul tag'leri için çalışacak */
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li
+        {
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #502064;
+            color: white;
+        }
+        .menu li:hover
+        {
+            background-color: #8267be;
+            cursor: pointer;
+        }
+        h1 
+        {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Network Akademi</h2>
+    </header>
+    <main class="clearfix">
+        <div class="menu">
+            <ul>
+                <li>C#</li>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javascript</li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Web Geliştirme Eğitimi</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quam inventore dolores quasi! Placeat et repudiandae praesentium voluptatum excepturi commodi inventore tempora natus asperiores itaque qui cupiditate nesciunt cum laboriosam repellat debitis deleniti voluptatem non nobis, recusandae error ratione iure aut animi! Facilis quas veniam quibusdam necessitatibus consectetur quod praesentium?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab vero nisi quibusdam, repudiandae molestias animi voluptates cupiditate provident, quo, voluptatem voluptas nemo ratione placeat eius nihil distinctio id beatae? Provident dolorum repellendus minus rerum odit accusantium ab aperiam. Voluptas ad magnam debitis quam excepturi earum et eveniet, impedit fuga accusantium?</p>
+        </div>
+    </main>
+    <footer style="text-align: center;">
+        <h2>Footer Bölümü</h2>
+        <p>Copyright &copy 2023 - Network Akademi - 203 - Akşam Sınıfı</p>
+    </footer>
+</body>
+</html>
+
+
+<!--  -->
+<!-- https://codepen.io/JavaScriptJunkie/pen/pPRooV -->
